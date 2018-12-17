@@ -5,6 +5,28 @@ var OPEN_ID = ''//储存获取到openid
 var SESSION_KEY = ''//储存获取到session_key  
 App({
   onLaunch: function () {
+    if (!wx.cloud) {
+      console.error('请使用 2.2.3 或以上的基础库以使用云能力')
+    }
+    else {
+      console.log('use cloud function...')
+      wx.cloud.init({
+        traceUser: true,
+      })
+    }
+    wx.cloud.callFunction({
+      name:"add",
+      data:{
+        a:1,
+        b:2
+      },
+      success: function(res){
+        console.log('1-success',res)
+      },
+      fail: function(res){
+        console.log('1-fail', res)
+      }
+    })
     wx.onNetworkStatusChange(function (res) {
       console.log('network21222=', res)
       wx.showToast({

@@ -1,0 +1,11 @@
+<!--pages/share/index.wxml-->
+
+<view class="container" bindlongtap='scanCode'>
+<image  src='../../image/qrcode.jpg'></image>
+<text>sdfsddddddd</text>
+  
+  <view bindtap='saveImageToPhotosAlbum1'>点击保存图片</view>
+</view>
+ <!-- <canvas canvas-id='share'>  -->
+  <canvas canvas-id='share' style='width:{{width}}px;height:{{height}}px;'>  
+</canvas>

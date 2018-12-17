@@ -1,0 +1,4 @@
+<!-- item.wxml -->
+<template name="item">
+  <text>000</text>
+</template>

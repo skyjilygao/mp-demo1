@@ -1,0 +1,103 @@
+
+<view class="selectBox">
+		<text><i>></i><text>Countries</text></text>
+			<view>
+				<text><i>></i><text>Africa</text></text>
+					<view>
+						<text><text>Algeria</text></text>
+						<!-- <p><span>Angola</span><input type="checkbox" name="" value=""></p>
+						<p><span>Benin</span><input type="checkbox" name="" value=""></p>
+						<p><span>Botswana</span><input type="checkbox" name="" value=""></p> -->
+					</view>
+			</view>
+	</view>
+-------------------------------------------------------------
+<view class="container">
+  <view>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for="{{items}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </checkbox-group>
+    ------------------------------------------------------
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for="{{items1[items1Index]}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </checkbox-group>
+
+  </view>
+
+  <!-- <text> 预算：</text>
+  <picker disabled='{{budgetPickerDisable}}' bindchange="budgetChange" value="{{budgetRangeIndex}}" range="{{budgetArr}}">
+            <view class="picker">
+            <input disabled='{{budgetInputDisable}}' bindblur='getBudgetValue' value='{{budgetRange}}'></input>
+              
+              <view class="icon"></view>
+            </view>
+          </picker>
+          <text bindtap='budgetReset'> 重置</text>
+  </view>
+<button bindtap='toUploadImage'>upload</button>
+<button open-type="contact">进入客服会话</button>
+<button open-type="share">分享</button>
+<button bindtap='toWx'>toWx</button> -->
+  <!-- <view>
+<image style='' src="{{prevUrl}}" bindtap="scanCode"></image>
+</view> -->
+  <!-- <form bindsubmit="formSubmit" bindreset="formReset" report-submit>
+    <view class="userinfo">
+      <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号 </button>
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+    <view class="body-view">
+      <switch bindchange="switch1Change" checked='{{isChecked}}' />
+    </view>
+  
+<button open-type='share' data-msg='hellooo'>分享</button>
+<text>网络状态：{{networkStatus}}</text>
+<text>网络类型：{{networkType}}</text>
+  <view class="section section_gap">
+    <view class="section__title">switch</view>
+    <switch name="switch" />
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">slider</view>
+    <slider name="slider" show-value></slider>
+  </view>
+
+  <view class="section">
+    <view class="section__title">input</view>
+    <input name="input" placeholder="please input here" />
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">radio</view>
+    <radio-group name="radio-group">
+      <label>
+        <radio value="radio1" />radio1</label>
+      <label>
+        <radio value="radio2" />radio2</label>
+    </radio-group>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">checkbox</view>
+    <checkbox-group name="checkbox">
+      <label>
+        <checkbox value="checkbox1" />checkbox1</label>
+      <label>
+        <checkbox value="checkbox2" />checkbox2</label>
+    </checkbox-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form> -->
+</view>
